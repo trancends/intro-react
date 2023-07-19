@@ -10,12 +10,12 @@ class Carousel extends Component {
   };
 
   handleClickEvent = (event) => {
-    this.setState({
-      ative: +event.target.dataset.index,
+    return this.setState({
+      active: +event.target.dataset.index,
     });
   };
 
-  reder() {
+  render() {
     const { active } = this.state;
     const { images } = this.props;
     return (
