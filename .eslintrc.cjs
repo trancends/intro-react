@@ -18,6 +18,8 @@ module.exports = {
   settings: { react: { version: "18.2" } },
   plugins: ["react-refresh", "jsx-a11y"],
   rules: {
+    "react/prop-types": 0,
+    "react/react-in-jsx-scope": 0,
     "react-refresh/only-export-components": [
       "warn",
       { allowConstantExport: true },
